@@ -1,362 +1,298 @@
-# Group Report — Day 02
+# 02 — Group Problem Statement
 
-> Candidate nhóm chọn: **Hướng dẫn lab dài, hai nguồn không đồng bộ**  
-> Nguồn đầu vào chính: Problem Card của Trần Minh Hiển — AI in Action Labs.
+> Nhóm 6B — Trợ lý Labpilot giải đáp thắc mắc  
+> Candidate problem: hướng dẫn lab dài, hai nguồn (trang web và README) khó ghép thành hiểu biết thống nhất
+
+---
 
 ## Thành viên nhóm
 
-| STT | Họ và tên | Mã học viên | Vai trò trong nhóm |
-|-----|-----------|-------------|--------------------|
-| 1 | Trương Minh Tâm | 2A202602005 | Tổng hợp group report, chuẩn hóa workflow và Problem Statement |
-| 2 | Trần Minh Hiển | 2A202601812 | Đưa candidate problem chính, mô tả case thực tế và pain point |
-| 3 |  Phạm Hải Yến  | 2A202601152 | Thành viên / Phân tích / Phản biện / Nhà đầu tư |
-| 4 | Trần Hoàng Khôi| 2A202601778 | Thành viên / Phân tích / Nghiên cứu giải pháp / Thuyết trình |
+| STT | Họ và tên | Mã học viên | 
+| 1 | Trần Minh Hiển | 2A202601812 | 
+| 2 | Trần Hoàng Khôi | 2A202601778 | 
+| 3 | Trương Minh Tâm | 2A202602005 | 
+| 4 | Phạm Hải Yến | 2A202601152 | 
 
+---
 
-# Phase 3 — Group Convergence
+## 1. Nhật ký hội tụ (từ nhiều candidate về một bài)
 
-## Bước 3.1 — Trình bày candidate problems
+### 1.1. Các candidate được đưa ra khi pitch
 
-Nhóm không chọn solution ngay. Mỗi candidate được nhìn qua các câu hỏi: actor là ai, workflow hiện tại nghẽn ở đâu, impact đo được không, và có thể so sánh Rule / Workflow / Agent không.
+Mỗi thành viên mang top vấn đề từ scan cá nhân. Nhóm tập trung vào các bài liên quan trải nghiệm học trong chương trình AI in Action Labs.
 
 | # | Người đưa ra | Candidate problem | Người gặp vấn đề | Điểm nghẽn | Cảm nhận nhanh |
 |---|---|---|---|---|---|
-| 1 | Trần Minh Hiển | Học viên phải đọc hướng dẫn lab dài trên web và README GitHub, hai nguồn cùng ý nhưng diễn đạt khác nhau | Học viên AI in Action Labs | Tự ghép hai nguồn trong đầu, không chắc nên theo cách hiểu nào | Rất phù hợp để đào sâu vì actor, workflow và metric rõ |
-| 2 | Trương Minh Tâm | Theo dõi yêu cầu nhất quán khi nhiều tài liệu dài chỉ khớp nhau khoảng 90% | Học viên làm lab cá nhân | Đối chiếu README, worksheet/example và rubric | Trùng pattern với candidate #1 |
-| 3 | Trương Minh Tâm | Tạo checklist có trích nguồn từ tài liệu lab dài | Học viên mới bắt đầu làm bài | Tự rút checklist nhưng không biết mỗi item đến từ nguồn nào | Hẹp hơn, có thể là một phần của solution |
-| 4 | Trương Minh Tâm | Tìm lại quyết định/context trong nhóm trước deadline | Thành viên nhóm làm bài nộp chung | Note, file nhóm và tin nhắn rời rạc | Có pain thật nhưng lệch khỏi problem tài liệu lab |
-| 5 | Phạm Hải Yến  | Học viên không hiểu mục đích từng phase nên làm cho có | Học viên mới học 1-2 buổi | Biết phải làm gì nhưng không hiểu vì sao làm bước đó | Gắn chặt với candidate #1 |
-| 6 | Phạm Hải Yến  | Lab coach phải trả lời lặp lại câu hỏi “em cần nộp gì?” | Lab coach, học viên | Câu hỏi đọc hiểu hướng dẫn lặp 2-3 lần/lab | Impact rõ cho coach |
-| 7 |  Trần Hoàng Khôi | Trước khi nộp, học viên không tự tin “đã đủ chưa?” | Học viên nộp bài | Không có pre-submit checklist có nguồn | Có thể là feature trong future workflow |
-| 8 |  Trần Hoàng Khôi | README thay đổi nhưng web lab hoặc nội dung tóm tắt chưa cập nhật kịp | Học viên, lab operator | Không biết nguồn nào mới nhất | Rủi ro vận hành cần xử lý |
-| 9 |  Trần Hoàng Khôi | FAQ cố định không cover hết cách hỏi của học viên | Học viên, lab coach | Câu hỏi theo ngữ cảnh riêng không có trong FAQ | Gợi ý vì sao AI Q&A có thể hữu ích |
+| 1 | Hiển / Yến | Hướng dẫn lab dài; web và README diễn đạt khác nhau → bỏ sót / hiểu sai / hỏi lab coach nhiều | Học viên làm lab | Đọc và tự ghép hai nguồn | Workflow (Labpilot hỏi–đáp) |
+| 2 | Hiển | Xin nghỉ qua email / Discord nhưng phản hồi chậm, không rõ trạng thái | Học viên xin nghỉ | Chờ không có trạng thái | Rule / Workflow nhẹ |
+| 3 | Hiển/Tâm | Khó chọn nhóm khi chưa quen, lịch khác nhau | Học viên đang phân nhóm | Thiếu thông tin lịch / kỳ vọng | Rule |
+| 4 | Khôi | Ôn notes sau mỗi buổi từ nhiều nguồn rời | Học viên tự ôn | Gom và viết lại | Workflow |
+| 5 | Tâm | Theo dõi tiến độ nhóm bằng chat rời | Nhóm mới | Không thấy còn thiếu gì cho đến sát hạn | Rule / checklist |
+| 6 | Yến | Không hiểu mục đích từng phase trong lab | Học viên | Làm theo hình thức, lệch mục tiêu học | Workflow |
 
-## Bước 3.2 — Gom trùng / cluster
+### 1.2. Gom cụm
 
-| Cluster | Candidates included | Pattern chung | Ghi chú |
-|---|---|---|---|
-| A — Hiểu hướng dẫn lab nhiều nguồn | #1, #2, #5, #8 | Học viên phải ghép web lab, README và ví dụ để hiểu yêu cầu cuối | Đây là cluster mạnh nhất |
-| B — Checklist trước khi làm/nộp | #3, #7 | Cần checklist ngắn, có nguồn, giúp biết làm gì và còn thiếu gì | Có thể trở thành intervention trong solution |
-| C — Hỏi đáp lặp lại với lab coach | #6, #9 | Câu hỏi đọc hiểu hướng dẫn lặp lại, coach bị kéo vào việc giải thích tài liệu | Cho thấy impact vận hành |
-| D — Context nhóm | #4 | Thông tin nhóm rời rạc trước deadline | Có pain nhưng khác domain chính |
+| Cụm | Candidates gồm | Pattern chung |
+|---|---|---|
+| A. Đọc hiểu và làm rõ yêu cầu lab | Hướng dẫn dài + hai nguồn; không hiểu mục đích phase; hỏi lab coach lặp | Thông tin đã có nhưng khó “bắt” nhanh và thống nhất |
+| B. Làm việc nhóm khi mới ghép | Chọn nhóm khó; theo dõi tiến độ bằng chat | Thiếu cấu trúc thông tin và kênh thống nhất |
+| C. Hỗ trợ hành chính / vận hành | Xin nghỉ email–Discord chậm | Yêu cầu đã gửi nhưng trạng thái và phản hồi mơ hồ |
+| D. Ôn tập cá nhân | Tổng hợp notes sau buổi | Gom nhiều nguồn thành bản ôn |
 
-## Bước 3.3 — Shortlist
+### 1.3. Shortlist
 
 | Candidate | Vì sao vào shortlist | Rủi ro / điều chưa rõ |
 |---|---|---|
-| Hướng dẫn lab dài, web và README không đồng bộ hoàn toàn | Actor rõ; pain lặp mỗi lab; workflow hiện tại vẽ được; có baseline 30-60 phút đọc và 2-3 lần hỏi coach/lab | Cần xác nhận thêm bằng quick interview/survey ngoài nhóm |
-| Checklist có trích nguồn từ tài liệu lab dài | Scope nhỏ, dễ pilot; có thể đo thời gian tạo checklist và số lỗi miss field | Có thể chỉ là solution component, chưa phải problem đủ rộng |
-| Tìm lại quyết định/context nhóm trước deadline | Pain thật trong làm việc nhóm; có thể đo số lần hỏi lại và thời gian tìm context | Không trực tiếp giải quyết pain web vs README của lab |
+| Hướng dẫn lab dài + hai nguồn (Labpilot) | Luồng rõ, xảy ra mỗi lab, có ước lượng thời gian và số lần hỏi coach, nhóm hiểu domain vì đang sống trong pain này | Nguồn nào là chuẩn chính thức; đồng bộ README với web có làm được không |
+| Xin nghỉ chậm phản hồi | Pain thật, có thể so sánh Rule với Workflow | Cần quyền với quy trình trường; khó pilot trong lab ngắn |
+| Chọn nhóm khó | Đúng giai đoạn hiện tại | Có thể là vấn đề một lần mỗi khóa; ít lặp hơn bài hướng dẫn lab |
 
-## Bước 3.4 — Score để đồng thuận
+### 1.4. Chấm nhanh để đồng thuận
 
-| Candidate | Actor rõ | Workflow rõ | Pain có evidence | Impact đo được | Làm trong lab | So sánh R/W/A được | Nhóm hiểu domain | Tổng |
+| Candidate | Người gặp vấn đề rõ | Luồng rõ | Pain có bằng chứng | Tác động đo được | Làm trong lab | So sánh Rule/Workflow/Agent được | Nhóm hiểu domain | Tổng |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| Hướng dẫn lab dài, web và README không đồng bộ hoàn toàn | 5 | 5 | 4 | 5 | 5 | 5 | 5 | 34 |
-| Checklist có trích nguồn từ tài liệu lab dài | 5 | 4 | 3 | 4 | 5 | 4 | 5 | 30 |
-| Tìm lại quyết định/context nhóm trước deadline | 4 | 4 | 3 | 4 | 4 | 4 | 4 | 27 |
+| Hướng dẫn lab + hai nguồn (Labpilot) | 5 | 5 | 4 | 4 | 5 | 5 | 5 | 33 |
+| Xin nghỉ chậm phản hồi | 4 | 4 | 3 | 3 | 3 | 4 | 3 | 24 |
+| Chọn nhóm khó | 4 | 4 | 3 | 3 | 4 | 3 | 4 | 25 |
 
-Candidate nhóm chọn:
-
-```text
-Hướng dẫn lab dài, hai nguồn web lab và README GitHub không đồng bộ hoàn toàn.
-```
-
-Vì sao chọn:
+**Candidate nhóm chọn:**
 
 ```text
-Candidate này có actor cụ thể là học viên AI in Action Labs, có workflow hiện tại rõ, có baseline thời gian 30-60 phút và số lần hỏi coach 2-3 lần/lab. Vấn đề không chỉ là “tài liệu dài”, mà là học viên phải tự ghép hai nguồn cùng ý nhưng diễn đạt khác nhau, dẫn đến hiểu lệch, thiếu field hoặc không chắc trước khi nộp.
+Khi làm lab, hướng dẫn trên trang web và README GitHub dài và diễn đạt khác nhau,
+dẫn đến học viên dễ bỏ sót thông tin hoặc không hiểu rõ mục đích từng bước,
+làm sai yêu cầu và phải hỏi lab coach nhiều lần.
 ```
 
-Vì sao không chọn các candidate còn lại:
+**Vì sao chọn:**
 
-```text
-Checklist có trích nguồn là một phần quan trọng của solution, nhưng nếu chỉ chọn nó làm problem thì chưa chạm hết pain “hai nguồn không đồng bộ”.
+Nhóm chọn bài này vì luồng làm việc hiện tại vẽ được rõ (đọc web → đọc README → tự ghép → làm → hỏi coach). Có ước lượng đo được (khoảng 30–60 phút đọc trước khi làm được việc; khoảng 2–3 lần hỏi lab coach mỗi lab). Có thể kiểm chứng nhanh với bạn cùng lớp. Có thể so sánh phương án không dùng AI (một nguồn chuẩn + danh sách kiểm tra) với mức Rule / Workflow / Agent. Phạm vi vừa đủ cho buổi lab: không cần xây hệ thống tìm kiếm toàn khóa ngay.
 
-Tìm lại context nhóm trước deadline có pain thật, nhưng domain khác hơn: nó nằm ở coordination trong nhóm, không phải đọc hiểu hướng dẫn lab.
-```
+**Vì sao không chọn các candidate còn lại:**
 
-Nếu có disagreement, nhóm xử lý thế nào:
+Bài xin nghỉ phụ thuộc quy trình nội bộ nhà trường, khó pilot và khó có dữ liệu vận hành trong thời gian lab. Bài chọn nhóm đúng giai đoạn nhưng lặp ít hơn; sau khi đã phân nhóm thì pain chính chuyển sang làm lab đúng yêu cầu. Bài ôn notes và theo dõi tiến độ hữu ích nhưng điểm nghẽn và chỉ số thành công kém “sát” hơn bài hướng dẫn lab.
 
-```text
-Nhóm thống nhất không chọn “AI Q&A” ngay từ đầu. Trước tiên nhóm chốt candidate problem là “học viên khó theo dõi yêu cầu nhất quán từ web lab và README”. Sau đó mới so sánh non-AI checklist/source of truth với workflow có AI.
-```
+**Nếu có bất đồng, nhóm xử lý thế nào:**
+
+Nhóm ưu tiên tiêu chí “có luồng rõ + đo được + nhóm đang sống trong vấn đề”. Khi còn nghiêng về bài chọn nhóm, nhóm hỏi lại: bài nào sẽ còn đau ở lab tiếp theo? Câu trả lời nghiêng về hướng dẫn lab, nên chốt Labpilot.
 
 ---
 
-# Phase 4 — Quick Validation + Research giải pháp
+## 2. Kiểm chứng nhanh
 
-## Bước 4.1 — Quick validation
-
-Validation hiện tại là tín hiệu ban đầu từ Problem Card và thảo luận nhóm. Nhóm chưa xem đây là bằng chứng tuyệt đối; cần phỏng vấn/survey thêm nếu triển khai thật.
+Nhóm (chủ yếu Hiển) đã hỏi nhanh vài bạn cùng lớp qua phỏng vấn ngắn và nhắn tin — không phải khảo sát cả lớp. Quy mô nhỏ, nên kết quả dùng để chỉnh hướng bài toán, không dùng để khẳng định thống kê toàn khóa.
 
 | Nguồn | Số người / số mẫu | Tín hiệu xác nhận | Tín hiệu phản bác | Nhóm sửa problem thế nào |
 |---|---:|---|---|---|
-| Problem Card / quan sát nội bộ | 1 case chi tiết | Học viên mất 30-60 phút đọc web + README; hỏi coach 2-3 lần/lab vì không chắc yêu cầu | Chưa có số liệu từ toàn cohort | Ghi rõ đây là baseline ban đầu, cần đo thêm |
-| Thảo luận nhóm | Nhóm lab | Nhiều người đồng ý pain nằm ở việc phải ghép nhiều tài liệu, không phải folder/file lộn xộn | Có thể non-AI checklist giải được phần lớn miss field | Thêm non-AI alternative: source of truth + checklist 1 trang |
-| Coach/support pattern | Quan sát từ lab | Câu hỏi “em cần nộp gì?”, “bước này để làm gì?”, “đủ chưa?” lặp lại | Chưa có log Discord/coach chính thức | Nếu pilot, cần đo số câu hỏi coach trước/sau |
+| Phỏng vấn / nhắn tin bạn cùng lớp | Vài bạn (không phải cả lớp) | Nhiều bạn thừa nhận phải đọc lâu; hay mở cả web lẫn README; từng hỏi lại lab coach vì không chắc “nộp gì / bước này để làm gì” | Một số bạn nói nếu đọc kỹ một nguồn thì vẫn làm được, chỉ mất thời gian hơn | Thu hẹp: không đặt bài toán là “làm chatbot trả lời mọi thứ”, mà là “làm rõ yêu cầu lab từ hai nguồn + giúp hỏi đúng khi vẫn chưa chắc” |
+| Quan sát trải nghiệm bản thân trong nhóm | 2 buổi lab đầu | Thời gian đọc hiểu khoảng 30–60 phút; hỏi lab coach khoảng 2–3 lần/lab là mức quen thuộc | Chưa đo đồng hồ từng bước cho cả cohort | Giữ chỉ số thành công dạng ước lượng có baseline cá nhân + vài bạn; ghi rõ còn cần đo thêm nếu pilot |
 
-### Câu hỏi validation bổ sung
-
-Nếu có thêm thời gian, nhóm sẽ hỏi nhanh 5-10 học viên bằng các câu hỏi sau để biến tín hiệu ban đầu thành bằng chứng rõ hơn:
-
-| Câu hỏi | Dùng để kiểm gì? | Cách đo |
-|---|---|---|
-| Lần gần nhất bạn làm lab, bạn mất bao lâu để đọc web lab + README trước khi bắt đầu làm? | Kiểm baseline thời gian 30-60 phút | Ghi số phút tự báo cáo |
-| Bạn có phải hỏi lab coach vì không chắc yêu cầu không? Bao nhiêu lần/lab? | Kiểm metric 2-3 lần hỏi coach/lab | Đếm số lần hỏi |
-| Chỗ nào làm bạn bối rối nhất: nộp gì, thứ tự bước, mục đích phase, hay format bài? | Xác định bottleneck cụ thể hơn | Chọn nhóm pain phổ biến |
-| Khi web lab và README diễn đạt khác nhau, bạn thường làm gì? | Kiểm root cause “hai nguồn không đồng bộ hoàn toàn” | Chọn: tự đoán / hỏi bạn / hỏi coach / bỏ qua |
-| Nếu có Q&A có trích nguồn ngay trên web lab, bạn có dùng trước khi hỏi coach không? | Kiểm nhu cầu solution | Thang 1-5 |
-
-Insight sau validation:
+**Insight sau kiểm chứng:**
 
 ```text
-Pain thật không nằm ở việc học viên không tìm thấy file. File/folder khá rõ. Pain nằm ở việc học viên phải đọc hai nguồn dài, web lab và README GitHub, rồi tự ghép thành một cách hiểu nhất quán. Khi hai nguồn cùng ý nhưng diễn đạt khác nhau, học viên dễ miss thông tin, làm sai mục đích bước hoặc phải hỏi coach nhiều lần.
-```
-
-## Bước 4.2 — Research giải pháp đã có
-
-Nhóm tìm pattern tương tự ở các công cụ tài liệu/Q&A có AI. Mục tiêu không phải copy tool, mà rút ra nguyên tắc: trả lời phải dựa trên nguồn, có cite, có fallback khi tài liệu chưa rõ.
-
-| Nguồn / tool / case | Link | Họ giải quyết phần nào? | Điểm mạnh | Khoảng trống / rủi ro | Bài học cho nhóm |
-|---|---|---|---|---|---|
-| GitBook AI Search | https://gitbook.com/docs/publishing-documentation/ai-search | Cho người đọc hỏi trực tiếp trong published docs; câu trả lời có phần sources liên quan | Pattern gần với Q&A trên web lab; trả lời ngay trong trải nghiệm đọc docs | Theo docs, AI search chủ yếu dựa trên content của docs site; nếu README GitHub là nguồn ngoài site thì cần sync/index riêng | Q&A hữu ích nhưng phải thiết kế pipeline đồng bộ README |
-| GitBook AI internal content search | https://gitbook.com/docs/creating-content/searching-your-content/gitbook-ai | Tìm và tóm tắt câu trả lời trong knowledge base nội bộ | Có semantic search và trả lời nhanh từ tài liệu | Index update có thể mất thời gian; nếu tài liệu mơ hồ thì AI vẫn có thể trả lời sai | Cần hiển thị “knowledge last updated” và yêu cầu cite nguồn |
-| NotebookLM | https://support.google.com/notebooklm/answer/16179559 và https://support.google.com/notebooklm/answer/16215270 | Cho thêm nhiều source như URL, Markdown, PDF, Google Docs; hỏi đáp dựa trên nguồn đã chọn và có citation | Phù hợp pattern “nhiều nguồn → hỏi theo ngữ cảnh → trả lời dựa trên sources” | Không phải widget trực tiếp trên web lab; cần học viên tự thêm nguồn nếu không tích hợp | Bài học: câu trả lời phải bám nguồn và người dùng cần thấy nguồn nào đang được dùng |
-| Non-AI: source of truth + checklist 1 trang | Không cần tool riêng | Gộp yêu cầu thành một bản official, giảm miss field | Rẻ, dễ hiểu, ít rủi ro hallucination | Cần người duy trì; không trả lời tốt câu hỏi theo ngữ cảnh riêng của từng học viên | Nên làm trước hoặc song song với AI Q&A |
-
-Research takeaway:
-
-```text
-Không nên build agent tự quyết toàn bộ bài lab. Hướng hợp lý hơn là Workflow: sync/index web lab + README, retrieve đoạn liên quan, AI trả lời ngắn có cite, học viên mở nguồn để xác nhận, và coach chỉ xử lý case ngoài tài liệu hoặc tài liệu thật sự chưa thống nhất.
+Pain thật không chỉ là “tài liệu dài”.
+Pain nằm ở chỗ học viên phải tự ghép hai cách diễn đạt thành một hiểu biết thống nhất,
+rồi vẫn không có cách xác nhận nhanh trước khi hỏi lab coach hoặc trước khi nộp.
 ```
 
 ---
 
-# Phase 5 — Workflow + Problem Statement
+## 3. Research giải pháp đã có
 
-## Bước 5.1 — Current workflow bản nhóm
+Nhóm tìm vài hướng đã tồn tại trên thị trường / sản phẩm học liệu, không giả định phải tự xây mọi thứ từ đầu.
 
-Workflow hiện tại:
-
-```text
-CURRENT STATE — ~30-60 phút đọc + 2-3 lần hỏi coach / lab
-
-[1 Mở trang web lab: 15-25']
-→ [2 Click sang README GitHub: 15-25']
-→ [3 Tự ghép hai nguồn trong đầu: 5-10']  <-- bottleneck
-→ [4 Bắt đầu làm theo cách hiểu hiện tại]
-→ [5 Gặp chỗ mơ hồ → hỏi lab coach: 2-3 lần/lab]  <-- bottleneck
-→ [6 Gần deadline đọc lại toàn bộ]
-→ [7 Sửa gấp hoặc nộp trong trạng thái chưa chắc]
-```
-
-| Bước | Actor | Input | Output | Thời gian/tần suất | Ghi chú |
+| Nguồn / công cụ / case | Link | Họ giải quyết phần nào? | Điểm mạnh | Khoảng trống / rủi ro | Bài học cho nhóm |
 |---|---|---|---|---|---|
-| 1 | Học viên | Trang web lab | Hiểu sơ mô tả, deadline, cách nộp | 15-25 phút/lab | Dễ đọc lướt vì nhiều chữ |
-| 2 | Học viên | README GitHub | Hiểu cấu trúc repo, file/folder, chi tiết kỹ thuật | 15-25 phút/lab | Mở tab riêng, giọng văn khác web |
-| 3 | Học viên | Web + README | Cách hiểu tạm thời về yêu cầu | 5-10 phút/lab | Bottleneck: tự ghép hai nguồn |
-| 4 | Học viên | Cách hiểu hiện tại | Bắt đầu làm bài | Lặp trong mỗi lab | Có thể miss field hoặc hiểu sai mục đích |
-| 5 | Học viên → lab coach | Câu hỏi mơ hồ | Coach giải thích | 2-3 lần/lab | Bottleneck vận hành, không scale |
-| 6 | Học viên | Web + README + bài đang làm | Kiểm lại trước deadline | 10-20 phút gần deadline | Dễ sửa gấp |
-| 7 | Học viên | Bài đã chỉnh | Nộp bài | Mỗi lab | Vẫn không chắc “đã đủ chưa” |
+| Notion AI (hỏi đáp / tóm tắt trong workspace) | https://www.notion.com/help/guides/category/ai | Hỏi đáp và tóm tắt nội dung đã có trong không gian làm việc | Tốt khi kiến thức nằm sẵn trong tài liệu | Vẫn cần người kiểm; phụ thuộc chất lượng tài liệu gốc | Pattern: trả lời từ nội dung có sẵn, không bịa ngoài nguồn |
+| GitBook AI / trợ lý trên docs | https://docs.gitbook.com/ | Hỏi đáp trên bộ tài liệu sản phẩm | Trả lời kèm ngữ cảnh trang docs | Nếu docs lệch nhau vẫn trả lời theo bản đã index | Cần đồng bộ nguồn; nên hiện nguồn trích dẫn |
+| Discord Forum / FAQ có ghim | https://support.discord.com/hc/en-us | Gom câu hỏi lặp và câu trả lời chuẩn | Không cần AI vẫn giảm hỏi lại | Không tự đối chiếu web với README; học viên vẫn phải tự tìm | Phương án không dùng AI: FAQ + danh sách kiểm tra vẫn giải được một phần |
+| ChatGPT / Claude dùng thủ công (học viên tự dán tài liệu) | https://openai.com/chatgpt | Học viên tự paste hướng dẫn rồi hỏi | Linh hoạt | Dễ bịa; không gắn sẵn trên trang lab; không đảm bảo đúng bản README mới nhất | Labpilot nên gắn trên web lab, dùng bản đã đồng bộ, bắt buộc dẫn nguồn |
 
-Bottleneck chính:
+**Bài học từ research:**
 
 ```text
-Bottleneck không nằm ở việc thiếu tài liệu, mà ở bước tự ghép hai nguồn dài và không đồng bộ hoàn toàn. Học viên cần biết phải làm gì, vì sao làm bước đó, và đã đủ yêu cầu chưa, nhưng hiện phải tự đoán hoặc hỏi coach.
+Không nên làm một Agent tự đọc repo học viên rồi tự sửa bài hay tự quyết nộp.
+Hướng hợp lý hơn là Workflow: đồng bộ nội dung web + README → trả lời có trích dẫn
+→ học viên xác nhận. Khi không đủ căn cứ, chuyển sang gợi ý câu hỏi cho lab coach
+thay vì đoán yêu cầu.
 ```
 
-## Bước 5.2 — Future workflow bản nhóm
+---
 
-Workflow sau tối ưu:
+## 4. Luồng làm việc trước / sau
+
+### 4.1. Luồng hiện tại (bản nhóm)
 
 ```text
-FUTURE STATE — đọc ít hơn, hiểu nhanh hơn, ít hỏi coach hơn
+HIỆN TẠI — khoảng 6 bước chính; 30–60 phút đọc hiểu; hỏi lab coach 2–3 lần / lab
 
-[1 Mở trang web lab]
-→ [2 Panel “Hỏi về lab này” xuất hiện cạnh hướng dẫn]
-→ [3 Hỏi AI bằng ngôn ngữ tự nhiên]
-→ [4 AI retrieve từ web lab + README đã sync/index]
-→ [5 AI trả lời ngắn + bullet + cite nguồn]
-→ [6 Học viên mở nguồn để xác nhận]  <-- human boundary
-→ [7 Làm bài / pre-submit check “em còn thiếu gì không?”]
-→ [8 Chỉ hỏi coach khi AI không chắc hoặc tài liệu thật sự lệch]
+[1] Học viên mở trang web lab
+      Đầu vào: link lab | Đầu ra: nắm sơ mô tả, hạn nộp, cách nộp
+      Thời gian: khoảng 15–25 phút (dễ lướt đoạn dài)
 
-Fallback:
-AI không chắc hoặc hai nguồn mâu thuẫn thật
-→ không trả lời dứt khoát
-→ hiện cả hai trích dẫn lệch nhau
-→ gợi ý hỏi lab coach và log câu hỏi để sửa tài liệu/FAQ.
+[2] Học viên mở README GitHub (tab riêng qua liên kết)
+      Đầu vào: link repo | Đầu ra: cấu trúc thư mục, chi tiết từng phần
+      Thời gian: khoảng 15–25 phút
+
+[3] Học viên tự ghép hai nguồn trong đầu
+      Đầu vào: hai bản diễn đạt | Đầu ra: hiểu biết “tạm ổn” hoặc vẫn mơ hồ
+      Thời gian: khoảng 5–10 phút  <-- điểm nghẽn chính
+
+[4] Học viên làm bài theo hiểu biết hiện tại
+      Rủi ro: bỏ sót phần / hiểu lệch mục đích bước
+
+[5] Khi mơ hồ → hỏi lab coach (Discord / trong buổi)
+      Bàn giao: học viên → lab coach → học viên
+      Lặp khoảng 2–3 lần mỗi lab
+
+[6] Gần hạn nộp → đọc lại để tìm chỗ thiếu → sửa gấp hoặc nộp chưa chắc
 ```
 
-| Bước | Actor / hệ thống | Input | Output | Mức xử lý | Boundary / ghi chú |
+| Bước | Người làm | Đầu vào | Đầu ra | Thời gian / tần suất | Ghi chú |
 |---|---|---|---|---|---|
-| 1 | Học viên | Trang web lab | Mở đúng lab cần làm | Người dùng | Không thay đổi hành vi chính |
-| 2 | Rule / pipeline | README GitHub + nội dung web lab | Knowledge base đã sync/index | Rule | Cần hiển thị lần cập nhật gần nhất |
-| 3 | Học viên | Câu hỏi tự nhiên | Query cụ thể theo ngữ cảnh | Người dùng | Ví dụ: “Lab này em phải nộp gì?” |
-| 4 | Retrieval workflow | Query + knowledge base | Các đoạn web/README liên quan | Workflow | Không dùng nguồn ngoài nếu chưa được phép |
-| 5 | AI Q&A | Đoạn retrieve được | Câu trả lời ngắn + bullet + citation | Workflow có AI | Không bịa yêu cầu nếu nguồn không nói |
-| 6 | Học viên | Câu trả lời + citation | Xác nhận cách hiểu cuối | Human boundary | Học viên vẫn mở nguồn gốc để kiểm |
-| 7 | Học viên | Checklist / answer đã xác nhận | Làm bài hoặc check trước nộp | Người dùng | AI không viết thay reflection/problem card |
-| 8 | Lab coach | Câu hỏi AI không chắc hoặc nguồn lệch thật | Quyết định/chỉnh tài liệu/FAQ | Human fallback | Coach xử lý ngoại lệ và cập nhật source of truth |
+| 1. Đọc web lab | Học viên | Trang hướng dẫn | Hiểu sơ yêu cầu | 15–25 phút / mỗi lab | Dễ lướt |
+| 2. Đọc README | Học viên | Repo GitHub | Chi tiết cấu trúc / phase | 15–25 phút / mỗi lab | Tab riêng |
+| 3. Tự ghép hai nguồn | Học viên | Hai bản diễn đạt | Hiểu biết tạm | 5–10 phút | Điểm nghẽn |
+| 4. Làm bài | Học viên | Hiểu biết tạm | Bản nháp nộp | Theo từng lab | Dễ lệch |
+| 5. Hỏi lab coach | Học viên + lab coach | Câu hỏi mơ hồ | Làm rõ yêu cầu | 2–3 lần / lab | Không scale tốt |
+| 6. Đọc lại trước nộp | Học viên | Tài liệu dài | Phát hiện thiếu | 10–20 phút | Sửa gấp |
 
-Before/after impact:
+**Điểm nghẽn chính:** bước tự ghép hai nguồn và thiếu cách xác nhận nhanh trước khi hỏi lab coach hoặc trước khi nộp.
 
-| Metric | Trước | Sau kỳ vọng | Ghi chú |
+### 4.2. Luồng sau khi cải thiện (Labpilot)
+
+```text
+SAU CẢI THIỆN — nắm yêu cầu nhanh hơn; câu hỏi gửi lab coach cụ thể hơn
+
+[1] Học viên mở trang web lab
+      → thấy danh sách kiểm tra ngắn (Rule) + khung “Hỏi về lab này”
+
+[2] Đồng bộ nội dung web + README đã được chuẩn bị sẵn (Rule / pipeline vận hành)
+      → Labpilot chỉ trả lời trên bản đã đồng bộ
+
+[3] Học viên hỏi bằng ngôn ngữ tự nhiên
+      → Hệ thống tìm đoạn liên quan trên web và README
+      → Nếu đủ căn cứ: trả lời ngắn + trích dẫn nguồn
+      → Nếu không chắc / hai nguồn mâu thuẫn thật / ngoài tài liệu:
+            không đoán → nêu điểm chưa rõ → gợi ý 1–3 câu hỏi gửi lab coach
+
+[4] Học viên mở đoạn gốc để xác nhận  <-- ranh giới người thật
+      → hoặc copy câu hỏi gợi ý → hỏi lab coach
+
+[5] Làm bài theo lộ trình đã làm rõ
+
+[6] Trước khi nộp: hỏi “còn thiếu gì?”
+      → đối chiếu danh sách yêu cầu bắt buộc
+      → học viên tự quyết nộp
+
+Khi AI sai hoặc không chắc:
+không bịa yêu cầu → luôn ưu tiên đoạn gốc → chuyển lab coach với câu hỏi có ngữ cảnh.
+```
+
+### 4.3. Tác động trước / sau
+
+| Chỉ số | Trước | Sau kỳ vọng | Ghi chú |
 |---|---:|---:|---|
-| Thời gian đọc để bắt đầu làm được việc | 30-60 phút | Dưới 20 phút | Target chính |
-| Số lần hỏi lab coach vì không chắc yêu cầu | 2-3 lần/lab | ≤ 1 lần/lab | Chỉ hỏi case đặc biệt hoặc tài liệu thật sự lệch |
-| Số nguồn học viên phải tự ghép thủ công | 2 nguồn dài | 1 câu trả lời có cite từ 2 nguồn | Học viên vẫn mở nguồn để kiểm |
-| Tỷ lệ nộp thiếu field / hiểu sai bước | Chưa đo chính thức | ≤ 1 lỗi miss / 3 lab | Cần đo trong pilot |
-| Độ tự tin trước khi nộp | 2-3/5 | ≥ 4/5 | Self-report sau lab |
-| Risk mới | Không có hallucination AI | Có risk AI trích sai hoặc trả lời quá tự tin | Giảm bằng cite, confidence và fallback |
-
-## Bước 5.3 — Problem Statement v0
-
-| Field | Nội dung |
-|---|---|
-| **Actor** | Học viên AI in Action Labs đang làm bài lab cá nhân hoặc trong nhóm mới thành lập. |
-| **Workflow** | Mỗi lab, học viên đọc trang web lab, mở README GitHub, tự ghép hai nguồn, bắt đầu làm, gặp mơ hồ thì hỏi lab coach, gần deadline đọc lại toàn bộ để kiểm thiếu. |
-| **Bottleneck** | Bước tự ghép web lab và README vì hai nguồn dài, cùng ý nhưng diễn đạt khác nhau; học viên không chắc yêu cầu nào bắt buộc, mục đích từng bước là gì, và nộp đủ chưa. |
-| **Impact** | Mất 30-60 phút đọc hiểu trước khi làm; hỏi lab coach 2-3 lần/lab; dễ miss field, sai format hoặc hiểu lệch mục tiêu bước học. |
-| **Success Metric** | Giảm thời gian đọc để bắt đầu làm từ 30-60 phút xuống dưới 20 phút; giảm số lần hỏi coach vì không chắc yêu cầu xuống ≤ 1 lần/lab; tăng độ tự tin trước khi nộp lên ≥ 4/5. |
-| **Boundary** | Không thay học viên làm bài; không tự bịa yêu cầu; không tự quyết source of truth nếu hai nguồn mâu thuẫn thật; lab coach vẫn xử lý ngoại lệ. |
+| Thời gian đọc để bắt đầu làm được việc | 30–60 phút | Dưới 20 phút | Chỉ số chính |
+| Số lần hỏi lab coach vì không chắc yêu cầu | Khoảng 2–3 lần / lab | Tối đa 1 lần / lab | Còn lại là case đặc biệt / ngoài tài liệu |
+| Số bước “tự ghép hai nguồn mù quáng” | Có, và là điểm nghẽn | Giảm nhờ trả lời có nguồn hoặc làm rõ chỗ lệch | |
+| Bước cần người thật | Hỏi coach + tự đọc lại | Xác nhận nguồn + quyết định nộp + hỏi coach khi AI không chắc | Ranh giới rõ |
+| Rủi ro mới | Ít rủi ro bịa yêu cầu từ máy | Có rủi ro trả lời sai / đồng bộ trễ | Cần trích dẫn + fallback hỏi coach |
 
 ---
 
-# Phase 6 — Rule / Workflow / Agent + Decision
+## 5. Problem Statement bản nháp (v0)
 
-## Bước 6.0 — Ma trận độ phù hợp với AI
+| Trường | Nội dung |
+|---|---|
+| **Người gặp vấn đề** | Học viên AI in Action Labs đang đọc hướng dẫn và làm bài lab. |
+| **Luồng làm việc** | Mỗi lab, học viên đọc trang web hướng dẫn, mở README GitHub, tự ghép hai nguồn, làm bài, hỏi lab coach khi không chắc, rồi kiểm lại trước khi nộp. |
+| **Điểm nghẽn** | Bước đọc và tự ghép hai nguồn diễn đạt khác nhau tốn thời gian và vẫn để lại chỗ mơ hồ về yêu cầu / mục đích từng bước. |
+| **Tác động** | Mất khoảng 30–60 phút trước khi làm được việc; dễ nộp thiếu phần; lab coach phải trả lời lại các câu hỏi làm rõ hướng dẫn. |
+| **Chỉ số thành công** | Giảm thời gian đọc hiểu xuống dưới 20 phút; giảm số lần hỏi lab coach vì không chắc yêu cầu xuống tối đa 1 lần mỗi lab. |
+| **Phạm vi** | Không thay học viên viết bài nộp; không tự bịa yêu cầu ngoài tài liệu; không thay lab coach quyết định ngoại lệ (hạn nộp, chấm điểm đặc biệt…). |
 
-Bài toán của nhóm nằm ở ô:
+---
 
-```text
-Độ mơ hồ cao + độ phức tạp trung bình/cao.
-```
-
-Vì sao:
-
-```text
-Độ mơ hồ cao vì web lab và README thường cùng ý nhưng diễn đạt khác nhau; học viên hỏi bằng ngôn ngữ tự nhiên và cần giải thích theo ngữ cảnh. Độ phức tạp trung bình/cao vì workflow cần sync/index hai nguồn, retrieve đoạn liên quan, trả lời có cite, pre-submit checklist, fallback khi không chắc. Tuy vậy, luồng xử lý vẫn tuyến tính nên chưa cần Agent tự lập kế hoạch động.
-```
-
-## Bước 6.1 — So sánh Rule / Workflow / Agent
+## 6. So sánh Rule / Workflow / Agent
 
 | Mức | Phương án cho bài toán nhóm | Khi nào đủ | Rủi ro | Chọn? |
 |---|---|---|---|---|
-| **Rule** | Một nguồn official duy nhất, checklist 1 trang, FAQ cố định, sync README định kỳ | Đủ nếu pain chính chỉ là miss field hoặc không biết nộp gì | Cần maintain thủ công; không trả lời tốt câu hỏi “bước này để làm gì?” theo ngữ cảnh | Dùng làm nền, chưa chọn làm toàn bộ |
-| **Workflow** | Sync/index web + README → retrieve đoạn liên quan → AI trả lời có cite → học viên xác nhận nguồn → pre-submit check | Phù hợp khi cần hỏi nhanh theo ngữ cảnh và đối chiếu hai nguồn dài | AI có thể trả lời sai nếu index cũ hoặc tài liệu mơ hồ; cần cite và fallback | **Chọn** |
-| **Agent** | Agent tự đọc repo học viên, tự đánh giá bài, tự sửa hoặc tự quyết nộp | Chỉ cần nếu workflow có nhiều nhánh phức tạp và cần tự gọi nhiều công cụ/ra quyết định | Scope rộng, rủi ro cao, dễ thay học viên hoặc coach | Chưa chọn |
+| **Không dùng AI** | Một nguồn hướng dẫn chuẩn + danh sách kiểm tra ngắn + FAQ ghim | Đủ nếu pain chủ yếu là bỏ sót field và lệch nguồn | Chưa giải tốt câu hỏi theo tình huống (“bước này để làm gì với bài của em?”) | Dùng làm nền, không đủ một mình |
+| **Rule** | Đồng bộ README với web; checklist cố định; FAQ theo từng lab | Đủ cho phần “phải nộp gì” nếu tài liệu ngắn và ít thay đổi | Không linh hoạt với cách hỏi đa dạng của học viên | Chọn một phần (nền tảng dữ liệu + checklist) |
+| **Workflow** | Đồng bộ nguồn → Labpilot trả lời có trích dẫn → học viên xác nhận; nếu không chắc thì gợi ý câu hỏi gửi lab coach | Hợp vì các bước tuyến tính, AI chỉ hỗ trợ làm rõ thông tin đã có | Trả lời sai, đồng bộ trễ, học viên tin máy quá mức | **Chọn** |
+| **Agent** | Tự đọc repo học viên, tự quyết bước tiếp, tự nhắc hạn, tự trả lời mọi chính sách | Chỉ cần nếu có nhiều nhánh quyết định và nhiều công cụ phải tự điều phối | Phạm vi rộng, rủi ro cao, khó kiểm soát trong pilot | Không chọn ở giai đoạn này |
 
-Mức chọn:
-
-```text
-Workflow.
-```
-
-Vì sao chọn:
+**Mức chọn:**
 
 ```text
-- Input có sẵn: web lab + README GitHub.
-- Workflow khá rõ: sync/index → retrieve → answer with citation → human verify.
-- AI hữu ích ở phần đọc hiểu ngôn ngữ tự nhiên, tóm tắt, đối chiếu cách diễn đạt và trả lời theo context.
-- Human boundary rõ: học viên/coach vẫn xác nhận nguồn và quyết định cuối.
+Workflow
+(có Rule làm nền: đồng bộ nguồn + danh sách kiểm tra)
 ```
 
-Vì sao không chọn mức đơn giản hơn:
+**Vì sao chọn Workflow:**
 
-```text
-Rule/checklist có thể giảm miss field, nhưng chưa đủ cho câu hỏi theo ngữ cảnh như “bước này để làm gì?”, “Problem Card khác Problem Statement ở đâu?”, hoặc “web nói thế này README nói thế kia thì em nên hiểu thế nào?”.
-```
+Các bước khá rõ và lặp lại mỗi lab. AI hữu ích ở bước ngôn ngữ: giải thích, đối chiếu, trả lời câu hỏi từ tài liệu đã có. Người học vẫn phải xác nhận nguồn và quyết định nộp. Khi không chắc, chuyển lab coach bằng câu hỏi cụ thể — đây vẫn là một bước trong luồng, không phải Agent tự lập kế hoạch động.
 
-Vì sao không chọn Agent:
+**Vì sao không chọn mức đơn giản hơn một mình, và không nhảy lên Agent:**
 
-```text
-Chưa cần Agent vì bài toán chưa yêu cầu AI tự lập kế hoạch, tự sửa bài hoặc tự nộp. Agent còn tăng rủi ro thay học viên làm bài, bịa yêu cầu hoặc vượt boundary của lab coach.
-```
-
-## Bước 6.2 — Problem Statement v1
-
-| Field | Nội dung |
-|---|---|
-| **Actor** | Học viên AI in Action Labs đang đọc hướng dẫn và làm bài lab. |
-| **Workflow** | Mở web lab → đọc mô tả/deadline/rubric → mở README GitHub → đọc cấu trúc repo/chi tiết kỹ thuật → tự ghép hai nguồn → làm bài → hỏi coach khi mơ hồ → kiểm lại trước khi nộp. |
-| **Bottleneck** | Tự ghép web lab và README khi hai nguồn dài, cùng ý nhưng diễn đạt khác nhau; học viên không có nơi xác nhận nhanh “phải làm gì, vì sao làm, đã đủ chưa”. |
-| **Impact** | 30-60 phút đọc hiểu trước khi làm; 2-3 lần hỏi coach/lab; dễ miss field, sai format hoặc hiểu lệch mục tiêu bước học. |
-| **Success Metric** | Thời gian đọc để bắt đầu làm dưới 20 phút; số lần hỏi coach vì không chắc yêu cầu ≤ 1 lần/lab; lỗi miss field ≤ 1 lỗi / 3 lab; độ tự tin trước nộp ≥ 4/5. |
-| **Boundary** | AI chỉ trả lời dựa trên web + README đã index; phải cite nguồn; không tự bịa yêu cầu, không viết bài thay học viên, không approve ngoại lệ hoặc deadline. |
-| **AI intervention point** | Sau khi học viên mở web lab và có câu hỏi cụ thể; trước khi hỏi lab coach hoặc đọc lại toàn bộ tài liệu. |
-| **Mức chọn** | Workflow: sync/index tài liệu → retrieve → Q&A có cite → pre-submit check → human verify. |
-| **Rủi ro & người thật kiểm tra** | Risk: index trễ, AI trích sai, hai nguồn mâu thuẫn thật. Người kiểm tra: học viên mở citation để xác nhận; lab coach xử lý câu hỏi không chắc và cập nhật FAQ/tài liệu. |
-
-## Bước 6.3 — Final decision
-
-| Câu hỏi | Yes / Not Yet / No | Ghi chú |
-|---|---|---|
-| Actor và workflow đã rõ chưa? | Yes | Actor là học viên lab; workflow đọc web → README → tự ghép → hỏi coach rõ. |
-| Baseline và success metric đã đo được chưa? | Not Yet | Có baseline ban đầu 30-60 phút và 2-3 lần hỏi coach/lab, nhưng cần đo thêm trên 5-10 học viên. |
-| Có data/input đủ dùng chưa? | Yes | Web lab và README GitHub là text có sẵn. |
-| Nếu AI sai, hậu quả có chấp nhận được không? | Yes, nếu có boundary | AI không tự chốt; phải cite nguồn, báo không chắc và fallback về coach. |
-| Có người review/owner vận hành không? | Not Yet | Cần lab team/mentor làm owner sync README và xử lý câu hỏi log. |
-| Có cách non-AI đơn giản hơn không? | Yes | Checklist/source of truth giải được một phần, nên nên làm song song. |
-
-Decision:
-
-```text
-Go với pilot nhỏ, chưa launch rộng.
-```
-
-Lý do:
-
-```text
-Problem rõ, workflow rõ, input có sẵn và metric có thể đo. Tuy nhiên validation còn là tín hiệu ban đầu, nên chỉ nên Go với pilot 1 lab để kiểm chứng pain và rủi ro trước khi mở rộng.
-```
-
-Pilot nhỏ nhất là:
-
-```text
-1 lab, ví dụ Day 02:
-1. Index nội dung web lab + README GitHub.
-2. Tạo widget/panel hỏi đáp hoặc prototype Q&A đơn giản.
-3. Chuẩn bị 5-10 câu hỏi mẫu: “Lab này nộp gì?”, “Reflection có bắt buộc không?”, “Problem Card khác Problem Statement ở đâu?”.
-4. Cho 5-10 học viên dùng thử trong 1 tuần.
-5. Đo thời gian đọc để bắt đầu làm, số lần hỏi coach, số lỗi miss field và độ tự tin trước nộp.
-```
-
-Exit / rollback:
-
-```text
-- Nếu AI trả lời không có citation hoặc citation sai, không dùng để trả lời chính thức.
-- Nếu index README trễ hoặc không ổn định, hạ xuống checklist/source of truth thủ công.
-- Nếu học viên vẫn hỏi coach 2-3 lần/lab sau pilot, cần xem lại chất lượng tài liệu hoặc scope câu hỏi.
-- Nếu AI bị dùng để viết bài thay học viên, tắt pre-submit answer dạng sinh nội dung và chỉ giữ checklist/citation.
-```
-
-Nếu Not Yet, cần validate gì trước:
-
-```text
-- Hỏi 5-10 học viên: mất bao lâu để đọc web + README trước khi làm?
-- Log 1-2 lab: mỗi lab coach nhận bao nhiêu câu hỏi liên quan đến “nộp gì / làm bước này để làm gì / đủ chưa?”.
-- Kiểm tra 3 bài nộp gần nhất: lỗi thiếu field hay hiểu sai yêu cầu xuất hiện ở đâu.
-```
-
-Nếu No-Go, nên làm gì thay AI:
-
-```text
-Tạo một source of truth chính thức cho mỗi lab: checklist 1 trang, phần “nộp gì”, phần “mỗi bước để làm gì”, FAQ cố định và changelog khi README/web thay đổi.
-```
-
-## Tự kiểm phần nhóm
-
-- [x] Nhóm có nhật ký hội tụ từ nhiều candidates về 1 candidate problem.
-- [x] Nhóm có quick validation ban đầu và kế hoạch validation bổ sung.
-- [x] Nhóm có research giải pháp đã có với hyperlink.
-- [x] Nhóm có current workflow và future workflow, kèm bottleneck, boundary và fallback.
-- [x] Nhóm có Problem Statement v0 và Problem Statement v1.
-- [x] Nhóm có so sánh Rule / Workflow / Agent và giải thích vì sao chọn Workflow.
-- [x] Nhóm có final decision, pilot nhỏ nhất, rollback và các điểm cần validate thêm.
+Chỉ Rule / FAQ giải được phần bỏ sót danh mục nộp, nhưng kém ở việc giải thích mục đích bước theo câu hỏi cụ thể. Agent tự xử lý toàn bộ thì vượt quá bài toán và tăng rủi ro bịa yêu cầu hoặc đụng quyền không cần thiết.
 
 ---
 
-*Group Report — Day 02 Lab*
+## 7. Problem Statement bản chốt (v1)
+
+| Trường | Nội dung |
+|---|---|
+| **Người gặp vấn đề** | Học viên AI in Action Labs chịu trách nhiệm đọc hiểu và hoàn thành bài lab đúng yêu cầu. |
+| **Luồng làm việc** | Đọc trang web lab → đọc README GitHub → tự ghép hai nguồn → làm bài → hỏi lab coach khi mơ hồ → kiểm lại trước khi nộp. |
+| **Điểm nghẽn** | Tự ghép hai cách diễn đạt và thiếu cách xác nhận nhanh khiến dễ bỏ sót / hiểu lệch mục đích bước. |
+| **Tác động** | Khoảng 30–60 phút đọc hiểu mỗi lab; khoảng 2–3 lần hỏi lab coach; rủi ro nộp thiếu phần. |
+| **Chỉ số thành công** | Thời gian đọc để bắt đầu làm được việc xuống dưới 20 phút; số lần hỏi lab coach vì không chắc yêu cầu xuống tối đa 1 lần/lab; trước khi nộp tự kiểm được danh sách yêu cầu bắt buộc ở mức cao. |
+| **Phạm vi** | Labpilot chỉ trả lời dựa trên nội dung web + README đã đồng bộ; không viết nội dung bài nộp thay học viên; không tự phê duyệt ngoại lệ; không gửi câu hỏi tới lab coach thay học viên nếu học viên chưa đồng ý. |
+| **Điểm can thiệp của AI** | Ngay trên trang web lab, sau khi học viên mở hướng dẫn và trước / trong lúc làm bài; thêm bước kiểm “còn thiếu gì?” trước khi nộp. |
+| **Mức chọn** | Workflow: Rule đồng bộ nguồn + checklist; AI hỏi–đáp có trích dẫn; khi không chắc thì gợi ý câu hỏi cho lab coach; học viên xác nhận. |
+| **Rủi ro và người thật kiểm tra** | Rủi ro: trả lời sai, đồng bộ README trễ, học viên tin máy quá mức. Người kiểm: học viên đối chiếu đoạn gốc trước khi làm theo; lab coach xử lý các câu hỏi được chuyển tới khi AI không chắc. |
+
+---
+
+## 8. Quyết định cuối
+
+| Câu hỏi | Yes / Not Yet / No | Ghi chú |
+|---|---|---|
+| Người gặp vấn đề và luồng đã rõ chưa? | Yes | Đọc web → README → tự ghép → làm → hỏi coach |
+| Baseline và chỉ số thành công đã đo được chưa? | Not Yet (một phần) | Có ước lượng từ trải nghiệm + vài bạn; chưa đo đồng hồ toàn khóa |
+| Có dữ liệu / đầu vào đủ dùng chưa? | Yes (cho pilot) | Nội dung web lab + README của từng lab |
+| Nếu AI sai, hậu quả có chấp nhận được không? | Yes nếu có fallback | Không đoán khi không chắc; luôn dẫn nguồn; chuyển lab coach |
+| Có người review / owner vận hành không? | Yes (giả định) | Team vận hành lab duy trì đồng bộ; lab coach xử lý case khó |
+| Có cách không dùng AI đơn giản hơn không? | Yes, dùng một phần | Một nguồn chuẩn + checklist vẫn nên làm song song |
+
+**Decision:**
+
+```text
+Go với phạm vi nhỏ.
+```
+
+**Lý do:**
+
+Bài toán rõ, luồng rõ, phương án không dùng AI đã được cân nhắc. AI nằm ở một điểm cụ thể (làm rõ yêu cầu từ tài liệu đã có), không ôm toàn bộ việc học. Ranh giới người thật và phương án quay về khi AI không chắc đã có. Phần baseline thời gian còn mang tính ước lượng — đủ để pilot, chưa đủ để khẳng định toàn khóa.
+
+**Pilot nhỏ nhất:**
+
+- Chọn một lab (ví dụ Day 02).
+- Đồng bộ nội dung trang web lab và README của lab đó.
+- Cho 5–10 học viên dùng khung hỏi–đáp trên trang web (hoặc bản thử nghiệm tương đương).
+- Đo: thời gian đọc để bắt đầu làm được việc; số lần hỏi lab coach; số lỗi bỏ sót phần khi nộp; chất lượng câu hỏi được gợi ý khi AI không chắc.
+
+**Nếu cần hạ cấp / quay lại:**
+
+- Nếu học viên vẫn phải hỏi coach nhiều vì AI trả lời sai hoặc đồng bộ trễ → tạm tắt trả lời tự động, chỉ giữ checklist + FAQ, hoặc chỉ giữ nhánh “gợi ý câu hỏi cho lab coach”.
+- Nếu AI bịa yêu cầu nộp → dừng ngay; chỉ cho trả lời khi có trích dẫn nguồn hợp lệ.
+
+**Giả định còn lại (ghi rõ):**
+
+- Ban tổ chức / team vận hành có thể gắn khung hỏi–đáp trên trang web lab hoặc chấp nhận bản thử nghiệm tương đương trong pilot.
+- README có thể được đồng bộ định kỳ với nội dung web; nếu chưa đồng bộ được tự động, pilot dùng đồng bộ thủ công cho một lab.
+
+---
+
+*Day 02 — 02 Group Problem Statement · Nhóm 6B Labpilot*
