@@ -9,10 +9,9 @@
 |-----|-----------|-------------|--------------------|
 | 1 | Trương Minh Tâm | 2A202602005 | Tổng hợp group report, chuẩn hóa workflow và Problem Statement |
 | 2 | Trần Minh Hiển | 2A202601812 | Đưa candidate problem chính, mô tả case thực tế và pain point |
+| 3 |  Phạm Hải Yến  | 2A202601152 | Thành viên / Phân tích / Phản biện / Nhà đầu tư |
+| 4 | Trần Hoàng Khôi| 2A202601778 | Thành viên / Phân tích / Nghiên cứu giải pháp / Thuyết trình |
 
-Ghi chú: bảng trên ghi theo thông tin thành viên hiện có trong dữ liệu được cung cấp. Nếu nhóm thực tế có thêm thành viên, bổ sung họ tên/mã học viên trước khi nộp.
-
----
 
 # Phase 3 — Group Convergence
 
@@ -26,11 +25,11 @@ Nhóm không chọn solution ngay. Mỗi candidate được nhìn qua các câu 
 | 2 | Trương Minh Tâm | Theo dõi yêu cầu nhất quán khi nhiều tài liệu dài chỉ khớp nhau khoảng 90% | Học viên làm lab cá nhân | Đối chiếu README, worksheet/example và rubric | Trùng pattern với candidate #1 |
 | 3 | Trương Minh Tâm | Tạo checklist có trích nguồn từ tài liệu lab dài | Học viên mới bắt đầu làm bài | Tự rút checklist nhưng không biết mỗi item đến từ nguồn nào | Hẹp hơn, có thể là một phần của solution |
 | 4 | Trương Minh Tâm | Tìm lại quyết định/context trong nhóm trước deadline | Thành viên nhóm làm bài nộp chung | Note, file nhóm và tin nhắn rời rạc | Có pain thật nhưng lệch khỏi problem tài liệu lab |
-| 5 | Nhóm | Học viên không hiểu mục đích từng phase nên làm cho có | Học viên mới học 1-2 buổi | Biết phải làm gì nhưng không hiểu vì sao làm bước đó | Gắn chặt với candidate #1 |
-| 6 | Nhóm | Lab coach phải trả lời lặp lại câu hỏi “em cần nộp gì?” | Lab coach, học viên | Câu hỏi đọc hiểu hướng dẫn lặp 2-3 lần/lab | Impact rõ cho coach |
-| 7 | Nhóm | Trước khi nộp, học viên không tự tin “đã đủ chưa?” | Học viên nộp bài | Không có pre-submit checklist có nguồn | Có thể là feature trong future workflow |
-| 8 | Nhóm | README thay đổi nhưng web lab hoặc nội dung tóm tắt chưa cập nhật kịp | Học viên, lab operator | Không biết nguồn nào mới nhất | Rủi ro vận hành cần xử lý |
-| 9 | Nhóm | FAQ cố định không cover hết cách hỏi của học viên | Học viên, lab coach | Câu hỏi theo ngữ cảnh riêng không có trong FAQ | Gợi ý vì sao AI Q&A có thể hữu ích |
+| 5 | Phạm Hải Yến  | Học viên không hiểu mục đích từng phase nên làm cho có | Học viên mới học 1-2 buổi | Biết phải làm gì nhưng không hiểu vì sao làm bước đó | Gắn chặt với candidate #1 |
+| 6 | Phạm Hải Yến  | Lab coach phải trả lời lặp lại câu hỏi “em cần nộp gì?” | Lab coach, học viên | Câu hỏi đọc hiểu hướng dẫn lặp 2-3 lần/lab | Impact rõ cho coach |
+| 7 |  Trần Hoàng Khôi | Trước khi nộp, học viên không tự tin “đã đủ chưa?” | Học viên nộp bài | Không có pre-submit checklist có nguồn | Có thể là feature trong future workflow |
+| 8 |  Trần Hoàng Khôi | README thay đổi nhưng web lab hoặc nội dung tóm tắt chưa cập nhật kịp | Học viên, lab operator | Không biết nguồn nào mới nhất | Rủi ro vận hành cần xử lý |
+| 9 |  Trần Hoàng Khôi | FAQ cố định không cover hết cách hỏi của học viên | Học viên, lab coach | Câu hỏi theo ngữ cảnh riêng không có trong FAQ | Gợi ý vì sao AI Q&A có thể hữu ích |
 
 ## Bước 3.2 — Gom trùng / cluster
 
